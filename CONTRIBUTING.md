@@ -22,7 +22,7 @@ The gophers there will answer or ask you to file an issue if you've tripped over
 In order to verify changes to the slides or code examples while developing
 locally compile with your local toolchain:
 
-    $ go install golang.org/x/tour/gotour
+    $ go install github.com/akwick/go-tutorial/gotour
     $ $GOPATH/bin/gotour
 
 ## Running the App Engine version locally

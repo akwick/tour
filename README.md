@@ -8,7 +8,7 @@ The easiest way to install the tour locally is to install
 To install the tour from source, first 
 [set up a workspace](https://golang.org/doc/code.html) and then run:
 
-	$ go get golang.org/x/tour/gotour
+	$ go get github.com/akwick/go-tutorial/gotour
 
 This will place a `gotour` binary in your workspace's `bin` directory.
 

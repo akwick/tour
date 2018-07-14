@@ -1,10 +1,17 @@
 Welcome!
-Learn how to use this tour: including how to navigate the different lessons and how to run code.
+A tutorial which will help you to learn Go.
 
-The Go Authors
-https://golang.org
+Anna-Katharina Wickert
 
-* Hello, 世界
+
+* Hello Women Techmakers Frankfurt
+
+With this tutorial you will take your first steps in Go.
+If you already take a look at Go you probably have seen the Tour of Go.
+I have adapted this tour because I like the idea of having descriptions with code side by side without the requirement of installing Go.
+I want that you can directly see whether you like Go without the requirement of installation.
+Another advantage of providing a tour is that you can learn Go in your own speed.
+For the moment, this are enough information. I think we should start with developing!
 
 Welcome to a tour of the [[https://golang.org/][Go programming language]].
 
@@ -43,30 +50,6 @@ When you're ready to move on, click the [[javascript:highlightAndClick(".next-pa
 
 .play welcome/hello.go
 
-* Go local
-
-The tour is available in other languages:
-
-- [[https://go-tour-br.appspot.com/][Brazilian Portuguese — Português do Brasil]]
-- [[https://go-tour-ca.appspot.com/][Catalan — Català]]
-- [[https://tour.go-zh.org/][Simplified Chinese — 中文（简体）]]
-- [[https://go-tour-zh-tw.appspot.com/][Traditional Chinese — 中文（繁體）]]
-- [[https://go-tour-fr.appspot.com/][French — Français]]
-- [[https://go-tour-de.appspot.com/][German — Deutsch]]
-- [[https://go-tour-he.appspot.com/][Hebrew — עִבְרִית]]
-- [[https://go-tour-id2.appspot.com/][Indonesian — Bahasa Indonesia]]
-- [[https://go-tour-ita.appspot.com/][Italian — Italiano]]
-- [[https://go-tour-jp.appspot.com/][Japanese — 日本語]]
-- [[https://go-tour-kr.appspot.com/][Korean — 한국어]]
-- [[https://go-tour-ro.appspot.com/][Romanian — Română]]
-- [[https://go-tour-ru-ru.appspot.com/][Russian - Русский]]
-- [[https://go-tour-es.appspot.com/][Spanish — Español]]
-- [[https://go-tour-th.appspot.com/][Thai - ภาษาไทย]]
-- [[https://go-tour-turkish.appspot.com/][Turkish - Türkçe]]
-- [[https://go-tour-ua.appspot.com/][Ukrainian — Українська]]
-- [[https://go-tour-uz.appspot.com/][Uzbek — Ўзбекча]]
-
-Click the [[javascript:highlightAndClick(".next-page")]["next"]] button or type `PageDown` to continue.
 
 #appengine: * Go offline
 #appengine: 
@@ -85,7 +68,7 @@ Click the [[javascript:highlightAndClick(".next-page")]["next"]] button or type 
 #appengine: Or, you can install and run this tour manually if you have any trouble
 #appengine: running the above command:
 #appengine: 
-#appengine:   go get golang.org/x/tour/gotour
+#appengine:   go get github.com/akwick/go-tutorial/gotour
 #appengine:   gotour
 #appengine: 
 #appengine: The tour program will open a web browser displaying

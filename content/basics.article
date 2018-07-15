@@ -1,18 +1,38 @@
 Packages, variables, and functions.
 Learn the basic components of any Go program.
 
-The Go Authors
-https://golang.org
+Anna-Katharina Wickert
 
 * Packages
 
+Let's start with the basics:
 Every Go program is made up of packages.
+You can imagine a package as one piece of lego which you will use to build e.g. a lego city.
+The lego city is your end solution or in other words: the program you have built.
+For a complex lego city you will need different lego pieces, e.g. cars and windows.
+One can compare these pieces with a package: A package provides you some functionality.
 
-Programs start running in package `main`.
+If you are often creating lego cities, you perhaps have reused components from another city isn't?
+You can do the same with Go.
+If you are using a package, you reuse a component written either by yourself or others to achieve your aim.
 
-This program is using the packages with import paths `"fmt"` and `"math/rand"`.
+As a computer, needs to know exactly what he has to do you need to provide him the information about the packages you are planning to use.
+You can do this by importing the corresponding package, e.g. `"fmt"`.
+The package `"fmt"` offers functionalities to print content to the command line.
+If you want to use a functionality aka a function of the package, you need to mark it by writting `fmt.FUNCTIONNAME`.
 
-By convention, the package name is the same as the last element of the import path. For instance, the `"math/rand"` package comprises files that begin with the statement `package`rand`.
+Besides telling the computer which functionality he should use, you need to tell him which function he should execute.
+We call this the main function which is in the package `main`.
+You define the package name in the first line of the program by writing `package PACKAGENAME`.
+
+On the left, you see a version of the `hello` program we have seen before. Can you fix it so that it runs?
+If yes, you have understood two important things for writing a Go program. Congratulations.
+If you struggle, don't be afraid: Ask. We are happy to help you and explain the concepts to you.
+
+
+#appengine: This program is using the packages with import paths `"fmt"` and `"math/rand"`.
+
+#appengine: By convention, the package name is the same as the last element of the import path. For instance, the `"math/rand"` package comprises files that begin with the statement `package`rand`.
 
 #appengine: *Note:* The environment in which these programs are executed is
 #appengine: deterministic, so each time you run the example program
@@ -21,7 +41,8 @@ By convention, the package name is the same as the last element of the import pa
 #appengine: (To see a different number, seed the number generator; see [[https://golang.org/pkg/math/rand/#Seed][`rand.Seed`]].
 #appengine: Time is constant in the playground, so you will need to use something else as the seed.)
 
-.play basics/packages.go
+.play basics/hello_noimp.go
+#appengine .play basics/packages.go
 
 * Imports
 

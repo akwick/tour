@@ -14,6 +14,4 @@ This will place a `gotour` binary in your workspace's `bin` directory.
 
 Unless otherwise noted, the go-tour source files are distributed
 under the BSD-style license found in the LICENSE file.
-
-Contributions should follow the same procedure as for the Go project:
-https://golang.org/doc/contribute.html
+This tour is a changed version of the original and awesome [go tour](https://github.com/golang/tour).

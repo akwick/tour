@@ -6,9 +6,9 @@ Anna-Katharina Wickert
 * Packages
 
 
-** Task 1:
+** Task:
 
-On the left, you see a version of the `hello` program we have seen before. Can you fix it so that it runs?
+On the right, you see a version of the `hello` program we have seen before. Can you fix it so that it runs?
 If yes, you have understood two important things for writing a Go program. Congratulations.
 If you struggle, don't be afraid: Ask. We are happy to help you and explain the concepts to you.
 
@@ -56,18 +56,36 @@ You define the package name in the first line of the program by writing `package
 
 * Imports
 
-This code groups the imports into a parenthesized, "factored" import statement.
-
-You can also write multiple import statements, like:
+With solving the previous task, you have understand why we need to import packages.
+Facing the reality one import isn't sufficient and we need to use multiple imports for one software project.
+You can write multiple imports as before, like:
 
 	import "fmt"
 	import "math"
 
-But it is good style to use the factored import statement.
+But it is good style to use the factored import statement which you see on the left.
 
 .play basics/imports.go
 
 * Exported names
+
+** Task 2:
+
+On the right, you see a small program which will use a value from another package (`math`).
+Currently, this code snippets produces an error.
+Run the code. Notive the error message.
+Can you fix this error?
+
+*** Why we distinguish between exported and not exported elements?
+
+If you write a package, some functions or variables are only used within the package and shouldn't use by others.
+An example for such a case are functions which help you to compute a value which will be used in another function.
+
+Going back to our lego example:
+You will give your friend a complete lego car. He shouldn't care about how you have built this car and which stones you have used.
+You won't share your way of building the car.
+Perhaps you have built the your car with one special trick which makes your car better than his.
+In this case, you only want to give him the possibility to get a car and not more functionality.
 
 In Go, a name is exported if it begins with a capital letter.
 For example, `Pizza` is an exported name, as is `Pi`, which is exported from
@@ -77,10 +95,6 @@ the `math` package.
 
 When importing a package, you can refer only to its exported names.
 Any "unexported" names are not accessible from outside the package.
-
-Run the code. Notice the error message.
-
-To fix the error, rename `math.pi` to `math.Pi` and try it again.
 
 .play basics/exported-names.go
 

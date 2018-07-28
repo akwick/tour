@@ -5,6 +5,17 @@ Anna-Katharina Wickert
 
 * Packages
 
+
+** Task 1:
+
+On the left, you see a version of the `hello` program we have seen before. Can you fix it so that it runs?
+If yes, you have understood two important things for writing a Go program. Congratulations.
+If you struggle, don't be afraid: Ask. We are happy to help you and explain the concepts to you.
+
+
+
+*** Why you need to change and add the missing lines of code:
+
 Let's start with the basics:
 Every Go program is made up of packages.
 You can imagine a package as a lego package, e.g., a package with a farm.
@@ -26,9 +37,7 @@ Besides describing precisely which functionality a computer should use, you need
 We call this the main function which is in the package `main`.
 You define the package name in the first line of the program by writing `package PACKAGENAME`.
 
-On the left, you see a version of the `hello` program we have seen before. Can you fix it so that it runs?
-If yes, you have understood two important things for writing a Go program. Congratulations.
-If you struggle, don't be afraid: Ask. We are happy to help you and explain the concepts to you.
+
 
 
 #appengine: This program is using the packages with import paths `"fmt"` and `"math/rand"`.

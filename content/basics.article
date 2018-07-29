@@ -100,8 +100,49 @@ Any "unexported" names are not accessible from outside the package.
 
 * Functions
 
-A function can take zero or more arguments.
+In the previous example, we have looked at variables. Now, we will take a look at functions.
 
+** Task
+Write a simple function in Go which returns the sum of two integer values.
+You should only write the function so that the call in the main function is successful.
+
+*** How can I manage this?
+
+A function contains some commands and can return a value aka a result of computations.
+
+In Go, you define a function by using the keyword `func`.
+You have seen this already for our main function which is the entry point of the program.
+As you want to write, a function named `add`, you replace `main` with `add`.
+
+(Two main functions will cause an error. Can you imagine why? Try it on the left and read the error message.)
+
+For the main function, we haven't passed further information. You can see this as no additional information are given between the two ( ).
+If you want to change this you need to fill the two curved brackets.
+To fill the empty space, you need to know exactly which type of value you want.
+Going back to our lego example, you need to define that you want to have a red lego stone and a blue lego stone.
+Besides defining the type, we need to add a name for the type.
+You will use this name later in the function and other will see the name when using your function.
+So, choose the name with care.
+
+For some functions, we need to return a value.
+We will give this information after the curved brackets.
+Here it is sufficient to specify only the type.
+Whoever uses your function is in the responsibility of naming the return value of your function.
+
+For your task, the lego stones are int which are integer values or simple numbers you can use for computation.
+Last but not least, you need to fill the function with live by combining different commands, e.g. addition, substraction of integers and calling functions.
+
+To sum this up, in Go you define a function in this way:
+
+
+    func functionname(optional name type, optional name type, ...) optional type_of_return_value {
+        functionality of the function
+        optional return something
+    }
+
+*** Some Definitions and Syntax Information
+
+In Go a function can take zero or more arguments.
 In this example, `add` takes two parameters of type `int`.
 
 Notice that the type comes _after_ the variable name.
@@ -109,6 +150,8 @@ Notice that the type comes _after_ the variable name.
 (For more about why types look the way they do, see the [[https://blog.golang.org/gos-declaration-syntax][article on Go's declaration syntax]].)
 
 .play basics/functions.go
+
+#appengine: TODO Explain addition and subtraction for ints
 
 * Functions continued
 

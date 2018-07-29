@@ -5,16 +5,11 @@ Anna-Katharina Wickert
 
 * Packages
 
-
-** Task:
-
-On the right, you see a version of the `hello` program we have seen before. Can you fix it so that it runs?
-If yes, you have understood two important things for writing a Go program. Congratulations.
-If you struggle, don't be afraid: Ask. We are happy to help you and explain the concepts to you.
+.html html/task_add_main_and_fmt_pkg.html
 
 
 
-*** Why you need to change and add the missing lines of code:
+** Why you need to change and add the missing lines of code:
 
 Let's start with the basics:
 Every Go program is made up of packages.
@@ -36,6 +31,9 @@ If you want to use a functionality aka a function of the package, you need to ma
 Besides describing precisely which functionality a computer should use, you need to tell the computer which function he should execute.
 We call this the main function which is in the package `main`.
 You define the package name in the first line of the program by writing `package PACKAGENAME`.
+
+.image /content/img/Go_Pkgs_MainFkt.png _ 500
+
 
 
 
@@ -248,6 +246,7 @@ An example for this in the variable declaration on the package level.
 Further, if an initializer is present, the type can be omitted; the variable will take the type of the initializer.
 You see an example for this in the variable declaration on the function leve.
 
+.html html/test.html
 
 .play basics/variables-with-initializers.go
 

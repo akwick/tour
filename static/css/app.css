@@ -527,3 +527,25 @@ a#run, a#kill {
         display: none;
     }
 }
+
+/*
+Additional styles for a more beatiful presentation of the content
+ */
+
+.task {
+    color: black;
+    background:lightgrey;
+    border: darkslategrey;
+    border-width: 2px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.headline {
+    width: inherit;
+    background: darkslategrey;
+    color:lightgrey;
+    padding: 5px;
+    display: block;
+    border-radius: 5px;
+}

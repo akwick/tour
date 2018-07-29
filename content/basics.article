@@ -169,9 +169,24 @@ to
 
 * Multiple results
 
-A function can return any number of results.
+In Go, it is possible that a function return any number of results.
 
-The `swap` function returns two strings.
+We will illustrate this, with the `swap` function which returns two strings.
+
+** What is happening here?
+
+*** Strings? I thought we have integers?
+
+Instead of handling integer values, we are now working with strings.
+A string is another primitive type in Go.
+You can pass any kind of string within two `"` and Go can handle these words as a string.
+
+*** Why should I return multiple values?
+
+For some cases, it is more convenient to return multiple values insteaf of one.
+Simplified spoken: If you want to have two apples.
+It is easier to get directly two apples instead of getting first one apple and one minute later the second apple or?
+
 
 .play basics/multiple-results.go
 
@@ -190,16 +205,49 @@ Naked return statements should be used only in short functions, as with the exam
 * Variables
 
 The `var` statement declares a list of variables; as in function argument lists, the type is last.
+We call a statement which declares a `var` a variable declaration.
 
 A `var` statement can be at package or function level. We see both in this example.
+
+** Why we use Variables?
+
+If your function has more functionality and more statements, you probably want to store some results.
+To store results, you can use a variable.
+
+** Why are the Return Values 0 and False?
+
+The variables on the package level are of type `bool`.
+This type is another primitive type besides `int` and `string`.
+A type of bool stores a boolean value.
+A boolean value is either true or false aka yes aka 0 or 1.
+
+The example does not assign one of the two values to the package variables.
+Therefore, the program does not know which value he should use.
+The Go language decided to use false for boolean values.
+You can try to change the output by assigning true to one of the values.
+
+As a small recap, the pattern for this is:
+
+    varname = value_you_want_to_assign
+
+For the variable on the function level, the situation is similar.
+The program does not define a concrete value.
+As in the case for boolean values, an integer value has a "fallback" value if nothing is declared.
+This value is 0.
+
 
 .play basics/variables.go
 
 * Variables with initializers
 
-A var declaration can include initializers, one per variable.
+In some cases, you know already which value your variable should have.
+In these cases, you can define the variable directly with an value as you can see on the left.
+This is optional and if you want to include initializers, you need one per variable.
+An example for this in the variable declaration on the package level.
 
-If an initializer is present, the type can be omitted; the variable will take the type of the initializer.
+Further, if an initializer is present, the type can be omitted; the variable will take the type of the initializer.
+You see an example for this in the variable declaration on the function leve.
+
 
 .play basics/variables-with-initializers.go
 

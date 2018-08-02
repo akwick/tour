@@ -19,6 +19,13 @@ Unless otherwise noted, the go-tour source files are distributed
 under the BSD-style license found in the LICENSE file.
 This tour is a changed version of the original and awesome [go tour](https://github.com/golang/tour).
 
+## Versions
+
+We use git tags to mark different versions of our gotour. 
+Below we have a list of meetups/events where we used the corresponding versions.
+
+* v1.0 - Women Techmakers Rhein-Main - 02.08.2018 
+
 ## License
 
 The code is under the [BSD 3 license](https://github.com/akwick/tour/blob/master/LICENSE).

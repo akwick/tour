@@ -59,12 +59,12 @@
 			"revisionTime": "2018-08-01T20:28:21Z"
 		}
 	],
-	"rootPath": "github.com/akwick/go-tutorial"
+	"rootPath": "github.com/akwick/go-tutorial",
   	"heroku" : {
 		"install": [
 		 	"./gotour"
 		]
 
- 	},
+ 	}
 }
 

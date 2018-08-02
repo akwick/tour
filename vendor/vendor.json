@@ -1,6 +1,63 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"package": [],
+	"package": [
+		{
+			"path": "appengine",
+			"revision": ""
+		},
+		{
+			"path": "appengine/urlfetch",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "F+tqxPGFt5x7DKZakbbMmENX1oQ=",
+			"path": "golang.org/x/net/websocket",
+			"revision": "f4c29de78a2a91c00474a2e689954305c350adf9",
+			"revisionTime": "2018-08-01T01:39:56Z"
+		},
+		{
+			"checksumSHA1": "4Im9wKzWtIB9dgTZv34B9YIpzak=",
+			"path": "golang.org/x/tools/go/ast/astutil",
+			"revision": "1801cb7c1535809b97bb6628791b3fb0df73476e",
+			"revisionTime": "2018-08-01T20:28:21Z"
+		},
+		{
+			"checksumSHA1": "Se6us33epv/tEUfXknQCokZ+fCY=",
+			"path": "golang.org/x/tools/godoc/static",
+			"revision": "1801cb7c1535809b97bb6628791b3fb0df73476e",
+			"revisionTime": "2018-08-01T20:28:21Z"
+		},
+		{
+			"checksumSHA1": "obxINoF79MU5qEroqztUN0m8XbA=",
+			"path": "golang.org/x/tools/imports",
+			"revision": "1801cb7c1535809b97bb6628791b3fb0df73476e",
+			"revisionTime": "2018-08-01T20:28:21Z"
+		},
+		{
+			"checksumSHA1": "raf03aN7Im1I492XC3DafXo0KsQ=",
+			"path": "golang.org/x/tools/internal/fastwalk",
+			"revision": "1801cb7c1535809b97bb6628791b3fb0df73476e",
+			"revisionTime": "2018-08-01T20:28:21Z"
+		},
+		{
+			"checksumSHA1": "aABw7/EtoAV9xecWkc8ZJdcFh8U=",
+			"path": "golang.org/x/tools/playground",
+			"revision": "1801cb7c1535809b97bb6628791b3fb0df73476e",
+			"revisionTime": "2018-08-01T20:28:21Z"
+		},
+		{
+			"checksumSHA1": "TAt4W/Bla7zteCauC1Nd9u6dY9s=",
+			"path": "golang.org/x/tools/playground/socket",
+			"revision": "1801cb7c1535809b97bb6628791b3fb0df73476e",
+			"revisionTime": "2018-08-01T20:28:21Z"
+		},
+		{
+			"checksumSHA1": "6telC1ISW3utzNwgbrAmGZ1B2iQ=",
+			"path": "golang.org/x/tools/present",
+			"revision": "1801cb7c1535809b97bb6628791b3fb0df73476e",
+			"revisionTime": "2018-08-01T20:28:21Z"
+		}
+	],
 	"rootPath": "github.com/akwick/go-tutorial"
 }

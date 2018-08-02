@@ -60,4 +60,5 @@
 		}
 	],
 	"rootPath": "github.com/akwick/go-tutorial"
+        "heroku.install": "gotour"
 }

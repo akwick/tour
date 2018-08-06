@@ -24,7 +24,7 @@ This tour is a changed version of the original and awesome [go tour](https://git
 We use git tags to mark different versions of our gotour. 
 Below we have a list of meetups/events where we used the corresponding versions.
 
-* v1.0 - Women Techmakers Rhein-Main - 02.08.2018 
+* v1.0 - Women Techmakers Rhein-Main - 02.08.2018 - [Slides of the talk](https://www.slideshare.net/AnnaKatharinaWickert/how-to-go-an-introduction-to-go-women-techmakers-rheinmain)
 
 ## License
 
